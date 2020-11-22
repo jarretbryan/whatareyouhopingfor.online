@@ -2,10 +2,6 @@
 // Figure out how to scroll on submission click
 // get more dynamic responses in answer column
 
-// NEW TO DO
-// Add in bouncing CSS arrow
-// More Dynamic Responses?
-
 document.addEventListener('DOMContentLoaded', () => {
     // WHAT IF I JUST PUT EVERYTHING IN ONE MASSIVE JS FILE
     // you aren't supposed to do this! 
