@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const printing = {
         makeBlob: function makeBlob(string) {
             let blob = new Blob([string], { type: "text/plain;charset=utf-8" });
-            let file = new File([blob], "document.html", {
+            let file = new File([blob], "receipt.html", {
                 type: "text/plain",
             });
             return file
