@@ -1,0 +1,170 @@
+/* I have so much work to do here. Should I just use tachyons? */
+
+@-webkit-keyframes gradientTest {  
+  0% { background-color: #b5e1fd; }
+  24% { background-color: #bce5ff; }
+  25% { background-color: #bee5fd; }
+  50% { background-color: #c2e7fd; }
+  51% { background-color: #d0edfd; }
+  74% { background-color: #d3efff; }
+  75% { background-color: #d5efff; }
+  100% { background-color:#e3f4ff; }
+}
+
+
+
+body {
+    background-color:rgb(184, 202, 22);
+    -webkit-animation-name: gradientTest;  
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 15s; 
+    margin: 0em;
+}
+
+.column {
+    z-index: 10;
+    /* background-color: red; */
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ /* @media (max-width: 720px) {
+     .column{
+         height: 50vh;
+         width: 50%;
+         overflow-y: hidden;
+         overflow-x: scroll;
+     }
+ } */
+
+#left-questions {
+    /* float: left; */
+}
+
+.print-nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    /* background-color: red; */
+    z-index: 1;
+    /* padding: 1rem; */
+}
+
+/* #print-nav div{
+    width: 85%;
+} */
+
+button#print {
+    border-radius: 9999px;
+    display: inline-block;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    background-color: #2d86fa;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin: .5rem;
+}
+
+.card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    box-sizing: border-box;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: none;
+    border-width: 0;
+    padding: 1.2rem;
+    line-height: 1;
+    overflow: visible;
+    border-radius: 9999px;
+    align-items: center;
+}
+
+label {
+    vertical-align: sub;
+    display: none;
+}
+
+input[type=text] {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+input[type=submit] {
+    background-color: #2d86fa;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: background-color .15s ease-in-out;
+    border-style: none;
+    -webkit-appearance: button;
+}
+
+p {
+    padding: 1em;
+}
+
+.arrow {
+  color: #3474ec;
+  z-index: 2;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  content: ' ';
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.arrow:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.arrow:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>What Were You Hoping For?</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="src/stores.js"></script>
+        <script src="src/app.js"></script>
+        <!-- I HAVE SO MUCH CSS WORK TO DO -->
+        <!-- ESPECIALLY FOR MOBILE -->
+        <!-- There's a tension here because I want it printable, but is most printing done on mobile? Social Media definitely lives on mobile. I wonder how to resolve this? Maybe it's a part of it. -->
+        <!-- Disappointed with the lack of accessible semantic HTML -->
+        <!-- Is this project title final? What were you hoping for? -->
+        <!-- building the receipt as a visual tie -->
+        <!-- explicit prompts to start the questionaire - autoscroll - start button? -->
+        <!-- text button -->
+    </head>
+    <body>
+        <div id="left-questions" class="column">
+            <h1 class="card"> what are you hoping for?</h1>
+            <form class="card question" id="name">
+                <div>
+                    <p>what do you want to be called? </p>
+                    <label for="input-name">what do you want to be called</label>
+                    <input required type="text" id="input-name" placeholder="name">
+                    <input type="submit" value="➡️">
+                </div>
+            </form>
+            
+        </div>
+        <div class="print-nav">
+            <div>
+                <button id="print"><a id="print-link" download="document.html">
+                    Print 🖨
+                </a></button>
+            </div>
+
+        </div>
+    </body>
+
+</html>
